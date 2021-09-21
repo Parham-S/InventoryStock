@@ -32,8 +32,6 @@ _This project was for educational purpose only and all images used were royalty 
 
 _All the design, mockups, assets, folder Structure layout were provided by BrainStation._
 
-The actual code, logic and syuling of the following were made by Roberto Manzano.
-
 #### Pages:
 
 - WarehouseModify
