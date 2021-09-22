@@ -1,37 +1,98 @@
-## Welcome to GitHub Pages
+# InStock
 
-You can use the [editor on GitHub](https://github.com/Parham-S/InventoryStock/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+InStock allows you to display, add, edit or delete Inventory items associated with different warehouses. As well as to display, add, edit and delete any of the warehouses within Instock. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Screenshots
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![instock](https://user-images.githubusercontent.com/50463988/134399147-0ce4a719-dc34-431b-894a-ba555e4f1a1d.png)
 
-```markdown
-Syntax highlighted code block
+  
+## Tech Stack
 
-# Header 1
-## Header 2
-### Header 3
+**Client:** React, Axios, SCSS/SASS, Moment.js
 
-- Bulleted
-- List
+**Server:** Node, Express
 
-1. Numbered
-2. List
+  
+## Get Started
 
-**Bold** and _Italic_ and `Code` text
+Clone the project
 
-[Link](url) and ![Image](src)
+```bash
+  git clone https://github.com/Parham-S/InventoryStock
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Go to the root directory
 
-### Jekyll Themes
+```bash
+  cd InStock-main
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Parham-S/InventoryStock/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Install dependencies in server root directory
 
-### Support or Contact
+```bash
+  npm install 
+```
+Install client dependencies
+```bash
+  cd client && npm install
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Navigate back to the project directory and start the full app
+
+```bash
+  npm run dev
+```
+
+  Concurrently will run both the client and server with the above command in the root directory. If a list of warehouses does not populate, ensure nodemon is running the server through your output log. 
+## Demo
+
+![InStock](https://user-images.githubusercontent.com/50463988/134399090-4b108968-2971-4dca-be27-7eb70b522dd5.gif)
+  
+## Features
+
+- Create a list of warehouses that you want to manage and add details
+- Add custom product sheets and instock numbers to inidividual warehouses
+- Adjust stock or indicate warehouses that are out of stock on a product
+- Inventory and warehouse search
+- Fully responsive on tablets and mobile
+  
+## Appendix
+
+Pages:
+
+    WarehouseModify
+    InventoryModify
+
+Components
+
+    EditAddInventory
+    EditWarehouse
+
+Helpers
+
+    axiosCalls.js
+    isEmpty.js
+    isPhone.js
+    isCheck.js
+    template.js
+    writeFile.js
+
+Routes
+
+    addWarehouse.js
+    editWarehouse.js
+    addInventory.js
+    editInventory.js
+
+Structure
+
+    Server structure
+    routes structure
+    helper structur
+
+  
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://parhamsaniei.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/psaniei/)
